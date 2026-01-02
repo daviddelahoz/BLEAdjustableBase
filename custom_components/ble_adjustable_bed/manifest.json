@@ -1,0 +1,16 @@
+{
+    "domain": "ble_adjustable_bed",
+    "name": "BLE Adjustable Base (Mattress Firm 900)",
+    "version": "1.0.0",
+    "documentation": "https://github.com/daviddelahoz/BLEAdjustableBase",
+    "issue_tracker": "https://github.com/daviddelahoz/BLEAdjustableBase/issues",
+    "config_flow": true,
+    "iot_class": "local_push",
+    "dependencies": ["bluetooth"],
+    "requirements": [
+      "bleak>=0.21.1",
+      "bleak-retry-connector>=3.6.0"
+    ],
+    "codeowners": ["@daviddelahoz"],
+    "loggers": ["custom_components.ble_adjustable_bed"]
+  }  

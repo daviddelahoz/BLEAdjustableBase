@@ -1,0 +1,7 @@
+{
+    "name": "BLE Adjustable Base (Mattress Firm 900)",
+    "content_in_root": false,
+    "domains": ["ble_adjustable_bed"],
+    "iot_class": "Local Push",
+    "render_readme": true
+  }  

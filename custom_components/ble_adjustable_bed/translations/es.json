@@ -1,0 +1,13 @@
+{
+    "config": {
+      "step": {
+        "user": {
+          "title": "Base Ajustable BLE",
+          "description": "Selecciona tu base ajustable iFlex de la lista."
+        }
+      },
+      "error": {
+        "no_iflex_found": "No se encontró ninguna base ajustable iFlex cercana."
+      }
+    }
+  }  
