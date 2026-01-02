@@ -1,3 +1,4 @@
+![BLE Adjustable Base](images/hacs.png)
 # BLE Adjustable Base (Mattress Firm 900) for Home Assistant
 
 A Home Assistant custom component for integrating the **Mattress Firm 900 Adjustable Base** via **Bluetooth Low Energy (BLE)**.  
