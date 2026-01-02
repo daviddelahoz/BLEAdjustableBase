@@ -1,7 +1,7 @@
 {
     "domain": "ble_adjustable_bed",
     "name": "BLE Adjustable Base (Mattress Firm 900)",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "documentation": "https://github.com/daviddelahoz/BLEAdjustableBase",
     "issue_tracker": "https://github.com/daviddelahoz/BLEAdjustableBase/issues",
     "config_flow": true,
