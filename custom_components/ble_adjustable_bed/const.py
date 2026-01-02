@@ -5,14 +5,11 @@ CONF_NAME = "name"
 
 CONF_DISCONNECT_AFTER_COMMAND = "disconnect_after_command"
 CONF_IDLE_DISCONNECT_SECONDS = "idle_disconnect_seconds"
-CONF_ENABLE_RX_NOTIFICATIONS = "enable_rx_notifications"
 
 DEFAULT_DISCONNECT_AFTER_COMMAND = False
 DEFAULT_IDLE_DISCONNECT_SECONDS = 8
-DEFAULT_ENABLE_RX_NOTIFICATIONS = True
 
 NUS_TX_UUID = "6e400002-b5a3-f393-e0a9-e50e24dcca9e"
-NUS_RX_UUID = "6e400003-b5a3-f393-e0a9-e50e24dcca9e"
 DEVICE_NAME_UUID = "00002a00-0000-1000-8000-00805f9b34fb"
 
 COMMANDS = {
@@ -33,15 +30,33 @@ COMMANDS = {
     "MASSAGE_STOP": {"name": "Massage Stop", "value": "5A010310306FA5", "handle": 14},
     "MASSAGE_UP": {"name": "Massage Up", "value": "5A0103104060A5", "handle": 14},
     "MASSAGE_DOWN": {"name": "Massage Down", "value": "5A0103104063A5", "handle": 14},
-
     "LIGHT_CYCLE": {"name": "Light (Cycle)", "value": "5A0103103070A5", "handle": 14},
     "LIGHT_OFF_HOLD": {"name": "Light Off (Hold 3s)", "value": "5A0103103074A5", "handle": 14},
-
     "INIT_1": {"name": "Init 1", "value": "09050A23050000", "handle": 58},
     "INIT_2": {"name": "Init 2", "value": "5A0B00A5", "handle": 14},
 }
 
-BUTTON_COMMAND_KEYS = [
-    k for k in COMMANDS
-    if k not in ("INIT_1", "INIT_2")
-]
+BUTTON_COMMAND_KEYS = [k for k in COMMANDS if k not in ("INIT_1", "INIT_2")]
+
+ICONS = {
+    "HEAD_UP": "mdi:arrow-up-bold",
+    "HEAD_DOWN": "mdi:arrow-down-bold",
+    "FOOT_UP": "mdi:arrow-up-bold-outline",
+    "FOOT_DOWN": "mdi:arrow-down-bold-outline",
+    "LUMBAR_UP": "mdi:seat-recline-extra",
+    "LUMBAR_DOWN": "mdi:seat-recline-normal",
+    "ZERO_GRAVITY": "mdi:orbit",
+    "FLAT": "mdi:bed-flat",
+    "LOUNGE": "mdi:sofa",
+    "INCLINE": "mdi:triangle-outline",
+    "ANTI_SNORE": "mdi:volume-vibrate",
+    "MASSAGE_1": "mdi:vibrate",
+    "MASSAGE_2": "mdi:vibrate",
+    "MASSAGE_3": "mdi:vibrate",
+    "MASSAGE_STOP": "mdi:vibrate-off",
+    "MASSAGE_UP": "mdi:chevron-up",
+    "MASSAGE_DOWN": "mdi:chevron-down",
+    "LIGHT_CYCLE": "mdi:led-strip-variant",
+    "LIGHT_OFF_HOLD": "mdi:lightbulb-off",
+    "DISCONNECT": "mdi:bluetooth-off",
+}
