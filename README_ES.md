@@ -5,6 +5,10 @@
 [![Licencia](https://img.shields.io/github/license/daviddelahoz/BLEAdjustableBase)](LICENSE)
 [![Mantenimiento](https://img.shields.io/maintenance/yes/2026.svg)](https://github.com/daviddelahoz/BLEAdjustableBase)
 
+<a href="https://www.buymeacoffee.com/daviddelahoz" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy me a coffee" width="217" height="60">
+</a>
+
 # Base Ajustable BLE (Mattress Firm 900) para Home Assistant
 
 Un componente personalizado de Home Assistant para integrar la **Base Ajustable Mattress Firm 900** mediante **Bluetooth Low Energy (BLE)**.  
