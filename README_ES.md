@@ -89,6 +89,17 @@ https://www.home-assistant.io/integrations/bluetooth/#bluetooth-proxies
 
 ---
 
+## Tarjeta de Control Remoto
+
+Hay un ejemplo de dashboard Lovelace listo para pegar aqui:
+[examples/lovelace-remote-card.yaml](examples/lovelace-remote-card.yaml)
+
+La tarjeta usa solo tarjetas integradas de Home Assistant y esta organizada de forma similar al control remoto fisico. La vista principal mantiene un solo boton **Light** para la luz trasera, pero tambien incluye **Light Off** y **Disconnect** en la parte inferior.
+
+Despues de agregar la tarjeta, reemplaza los IDs de ejemplo `button.ble_adjustable_base_*` por las entidades exactas creadas en tu instancia de Home Assistant.
+
+---
+
 ## Notas y Limitaciones
 
 - La base ajustable **no expone información de posición o ángulo en tiempo real** mediante BLE.

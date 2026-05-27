@@ -89,6 +89,17 @@ https://www.home-assistant.io/integrations/bluetooth/#bluetooth-proxies
 
 ---
 
+## Dashboard Remote Card
+
+A ready-to-paste Lovelace dashboard example is available here:
+[examples/lovelace-remote-card.yaml](examples/lovelace-remote-card.yaml)
+
+The card uses only built-in Home Assistant cards and is arranged like the physical remote. It keeps the main view simple with one **Light** button for the rear light, while still including **Light Off** and **Disconnect** controls at the bottom.
+
+After adding the card, replace the sample `button.ble_adjustable_base_*` entity IDs with the exact button entities created in your Home Assistant instance.
+
+---
+
 ## Notes & Limitations
 
 - The adjustable base does **not expose real-time position or angle telemetry** over BLE.

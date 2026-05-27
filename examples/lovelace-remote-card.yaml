@@ -1,0 +1,206 @@
+# Mattress Firm 900 remote-style dashboard card.
+#
+# Paste this into a manual Lovelace card, then replace the example entity IDs
+# with the button entities created by your BLE Adjustable Base integration.
+#
+# Tip: in Home Assistant, go to Settings > Devices & services > Entities and
+# filter by your bed name to copy the exact button entity IDs.
+
+type: vertical-stack
+cards:
+  - type: grid
+    title: Mattress Firm 900 Remote
+    columns: 3
+    square: false
+    cards:
+      - type: button
+        name: Incline
+        icon: mdi:triangle-outline
+        tap_action:
+          action: call-service
+          service: button.press
+          target:
+            entity_id: button.ble_adjustable_base_incline
+      - type: button
+        name: Lounge
+        icon: mdi:sofa
+        tap_action:
+          action: call-service
+          service: button.press
+          target:
+            entity_id: button.ble_adjustable_base_lounge
+      - type: button
+        name: Zero Gravity
+        icon: mdi:orbit
+        tap_action:
+          action: call-service
+          service: button.press
+          target:
+            entity_id: button.ble_adjustable_base_zero_gravity
+
+  - type: grid
+    columns: 3
+    square: false
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: button
+            name: Head Up
+            icon: mdi:chevron-up
+            tap_action:
+              action: call-service
+              service: button.press
+              target:
+                entity_id: button.ble_adjustable_base_head_up
+          - type: button
+            name: Head Down
+            icon: mdi:chevron-down
+            tap_action:
+              action: call-service
+              service: button.press
+              target:
+                entity_id: button.ble_adjustable_base_head_down
+      - type: vertical-stack
+        cards:
+          - type: button
+            name: Flat
+            icon: mdi:bed-flat
+            tap_action:
+              action: call-service
+              service: button.press
+              target:
+                entity_id: button.ble_adjustable_base_flat
+          - type: button
+            name: Anti-Snore
+            icon: mdi:volume-vibrate
+            tap_action:
+              action: call-service
+              service: button.press
+              target:
+                entity_id: button.ble_adjustable_base_anti_snore
+          - type: button
+            name: Stop
+            icon: mdi:stop
+            tap_action:
+              action: call-service
+              service: button.press
+              target:
+                entity_id: button.ble_adjustable_base_massage_stop
+      - type: vertical-stack
+        cards:
+          - type: button
+            name: Foot Up
+            icon: mdi:chevron-up
+            tap_action:
+              action: call-service
+              service: button.press
+              target:
+                entity_id: button.ble_adjustable_base_foot_up
+          - type: button
+            name: Foot Down
+            icon: mdi:chevron-down
+            tap_action:
+              action: call-service
+              service: button.press
+              target:
+                entity_id: button.ble_adjustable_base_foot_down
+
+  - type: grid
+    columns: 3
+    square: false
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: button
+            name: Lumbar Up
+            icon: mdi:chevron-up
+            tap_action:
+              action: call-service
+              service: button.press
+              target:
+                entity_id: button.ble_adjustable_base_lumbar_up
+          - type: button
+            name: Lumbar Down
+            icon: mdi:chevron-down
+            tap_action:
+              action: call-service
+              service: button.press
+              target:
+                entity_id: button.ble_adjustable_base_lumbar_down
+      - type: vertical-stack
+        cards:
+          - type: grid
+            columns: 3
+            square: false
+            cards:
+              - type: button
+                name: "1"
+                icon: mdi:numeric-1-circle
+                tap_action:
+                  action: call-service
+                  service: button.press
+                  target:
+                    entity_id: button.ble_adjustable_base_massage_1
+              - type: button
+                name: "2"
+                icon: mdi:numeric-2-circle
+                tap_action:
+                  action: call-service
+                  service: button.press
+                  target:
+                    entity_id: button.ble_adjustable_base_massage_2
+              - type: button
+                name: "3"
+                icon: mdi:numeric-3-circle
+                tap_action:
+                  action: call-service
+                  service: button.press
+                  target:
+                    entity_id: button.ble_adjustable_base_massage_3
+          - type: button
+            name: Light
+            icon: mdi:led-strip-variant
+            tap_action:
+              action: call-service
+              service: button.press
+              target:
+                entity_id: button.ble_adjustable_base_light_cycle
+      - type: vertical-stack
+        cards:
+          - type: button
+            name: Massage Up
+            icon: mdi:chevron-up
+            tap_action:
+              action: call-service
+              service: button.press
+              target:
+                entity_id: button.ble_adjustable_base_massage_up
+          - type: button
+            name: Massage Down
+            icon: mdi:chevron-down
+            tap_action:
+              action: call-service
+              service: button.press
+              target:
+                entity_id: button.ble_adjustable_base_massage_down
+
+  - type: grid
+    columns: 2
+    square: false
+    cards:
+      - type: button
+        name: Light Off
+        icon: mdi:lightbulb-off
+        tap_action:
+          action: call-service
+          service: button.press
+          target:
+            entity_id: button.ble_adjustable_base_light_off_hold_3s
+      - type: button
+        name: Disconnect
+        icon: mdi:bluetooth-off
+        tap_action:
+          action: call-service
+          service: button.press
+          target:
+            entity_id: button.ble_adjustable_base_disconnect_enable_remote
